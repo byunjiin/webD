@@ -1,0 +1,141 @@
+@charset "utf-8"; /*가장 첫줄 utf-8*/
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕";
+  color: #333333; /*기본텍스트색*/
+}
+html {
+  min-width: 1200px; /*최대너비*/
+  background-color: #ffffff; /*기본배경색*/
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+header {
+  width: 1200px;
+  height: 100px;
+  background-color: #dddddd;
+}
+.wrap {
+  width: 1200px;
+}
+.logo {
+  float: left;
+  width: 250px;
+  height: 100px;
+  border: solid red 1px;
+}
+
+.logo img {
+  width: 250px;
+  height: 100px;
+}
+.menu {
+  float: right;
+  width: 800px;
+  height: 100px;
+  z-index: 1; /*가장 앞쪽에 배치*/
+}
+.navi {
+  float: right;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+/* 메뉴의 제목부분 */
+.navi > li {
+  float: left;
+}
+.navi > li > a {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #333333;
+  color: #ffffff;
+}
+/* 메뉴 제목부분 효과 */
+.navi > li > a:hover {
+  background-color: #e9c962;
+}
+/* 메뉴의 상세부분 */
+.submenu {
+  width: 180px;
+  height: 160px;
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.submenu > li > a {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background: #ffffff;
+  color: #333333;
+}
+/* 메뉴 상세부분 효과 */
+.submenu > li > a:hover {
+  background-color: #e9c962;
+}
+.imgslide {
+  width: 1200px;
+  height: 300px;
+}
+.contents {
+  float: left;
+  width: 1200px;
+  height: 200px;
+}
+.tabmenu {
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+.otherwrap {
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+.banner {
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+.shortcut {
+  float: right;
+  width: 400px;
+  height: 200px;
+}
+footer {
+  width: 1200px;
+  height: 100px;
+  background-color: #e9c962;
+}
+.btlogo {
+  float: left;
+  width: 250px;
+  height: 100px;
+}
+.site {
+  float: right;
+  width: 600px;
+  height: 100px;
+}
+.btmenu {
+  width: 600px;
+  height: 50px;
+}
+.copyright {
+  width: 600px;
+  height: 50px;
+}
