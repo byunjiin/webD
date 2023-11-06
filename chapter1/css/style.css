@@ -1,0 +1,270 @@
+@charset "utf-8";
+*{
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은 고딕"; /*기본 글씨체*/
+  color: #333333; /*기본 글씨색*/
+}
+body{
+  width: 1000px; /*화면 너비*/
+  height: 650px; /*화면 높이*/
+  background-color: #ffffff; /*배경색*/
+  font-size: 20px; /*글자크기*/
+}
+a{
+  text-decoration: none; /*링크가 걸린 텍스트 밑줄이 나타나지 않음*/
+  display: block; /*박스요소 : block-요소앞뒤로 줄바꿈*/
+}
+/*세로형*/
+header{
+  float: left;
+  position: absolute;
+}
+.top{
+  float: left;
+  width: 200px;
+  height: 650px;
+}
+.logo{
+  float: left;
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;  
+}
+.logo img{
+  float: left;
+  margin-top: 5px;
+}
+.menu{
+  float: left;
+  top: 100px;
+  left: 10px;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+.navi>li{
+  float: left;
+  width: 180px;
+}
+.navi>li>a{
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333333;
+  color: #ffffff;
+}
+.navi>li>a:hover{ /*마우스 올렸을때*/
+  background-color: #eeeeee;
+  color: #000000;
+}
+.submenu{
+  float: left;
+  width: 180px;
+  height: 100%;
+  left: 180px;
+  top: 0px;
+  position: absolute;
+  background-color: #cccccc;
+  display: none;
+  z-index: 1;
+}
+.submenu>li>a{
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #cccccc;
+  color: #ffffff;
+}
+.submenu>li>a:hover{
+  background-color: #999999;
+  color: #ffff00;
+}
+.imgslide{
+  float: right; /*가로형일땐 left*/
+  width: 800px;
+  height: 350px;
+  position:relative;
+}
+.imgslide>a{
+  display:block; 
+  position:absolute;
+}
+.imgslide span{
+  width:160px;
+  text-align:center;
+  color:#ffffff;
+  font-weight:bold;
+  left:40%;
+  top:45%;
+  position:absolute;
+  background-color:rgba(200,200,200,0.5);
+}
+.contents{
+  float: right; /*가로형일땐 left*/
+  width: 800px;
+  height: 200px;
+}
+.notice{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.tab{
+	float:left;
+	width:300px;
+}
+.notice h4{
+	float:left;
+	height:50px;
+	line-height:50px; /*줄간격*/
+}
+.notice ul{
+	float:left;
+	width:280px;
+	height:30px;
+	line-height:30px;
+	font-size:14px; 
+}
+.notice li span{
+	float:right;
+}
+.notice li:hover{
+	font-weight:bold;
+}
+.gallery{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.gallery h4{
+	float:left;
+	height:50px;
+	line-height:50px;
+}
+.gallery ul li{
+    float:left;
+    padding:10px;
+    margin-top:10px;
+}
+.gallery img{
+    width:80px;	
+    height:80px;
+}
+.gallery li:hover{
+    opacity:0.5; /*불투명도 50%*/
+}
+.shortcut{
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+.shortcut img{
+  float:right;
+  width:180px;
+  height:180px;
+  padding:10px;	
+}
+.sctext{
+  width:100px;
+  text-align:center;
+  font-weight:bold;
+  position:absolute;
+  background-color:rgba(255,255,255,0.5);
+  margin-top:85px;
+  margin-left:50px;
+}
+#modal{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  background:rgba(0,0,0,0.6); 
+  z-index:1; 
+  display:none; 
+}
+#modal.active{
+  display:block;
+}
+.modal_up{   /*레이어 팝업창 스타일*/
+width:400px;
+height:300px;
+position:fixed;
+left:30%; 
+top:20%; 
+background-color:#ffffff;
+}
+.uptitle{
+margin-top:30px;
+text-align:center; 
+line-height:16px; 
+font-size:20px; 
+font-weight:bold;
+}
+.upbody{
+padding:30px;
+text-align:center;
+font-size:16px;
+line-height:30px; 
+}
+.btn{
+width:80px;
+height:20px;
+display:block;
+text-align:center;
+font-size:15px;
+font-weight:bold;
+background:#cccccc;
+position:absolute; 
+right:10px;
+bottom:10px;
+}
+footer{
+  float: right; /*가로형일땐 left*/
+}
+.bottom{
+  float: right; /*가로형일땐 left*/
+  width: 800px;
+  height: 100px;
+  background-color:#cccccc;
+}
+.blogo{
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+.btlogo img{    
+	float:left;
+	width:200px;
+	height:40px;
+	margin-top:25px;
+	/* margin-left:10px; */
+}
+.copy{
+  float: left;
+  width: 400px;
+  height: 100px;
+  text-align:center;
+  font-size:14px;
+  line-height:100px;
+}
+.familysite{
+  float: right;
+  width: 200px;
+  height: 100px;
+}
+.familysite select{
+  float:right;
+  height:30px;
+  width:190px;
+  margin-top:20px;
+  margin-right:10px;
+  font-size:14px;
+}
