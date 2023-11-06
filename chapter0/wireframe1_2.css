@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* 세로형 */
+html, body{
+  width: 1200px;
+  font-size: 20px;
+}
+header{
+  float: left;
+  width: 200px;
+  height: 670px;
+}
+.top{
+  float: left;
+  width: 200px;
+  height: 600px;
+}
+.logo{
+  float: left;
+  width: 200px;
+  height: 100px;
+  background-color: #eeeeee;
+}
+nav{
+  float: left;
+}
+.menu{
+  float: left;
+  width: 150px;
+}
+.menu>li{
+  float: left;
+  width: 150px;
+}
+.imgslide{
+  float: left;
+  width: 1000px;
+  height: 350px;
+  background-color: #00ffff;
+}
+.contents{
+  float: left;
+  width: 1000px;
+  height: 200px;
+  background-color: #ff0000;
+}
+.notice{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.gallery{
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+.shortcut{
+  float: left;
+  width: 400px;
+  height: 200px;
+}
+footer{
+  float: left;
+  width: 1000px;
+  height: 120px;
+  background-color: #eeeeee;
+}
+.copy{
+  float: left;
+  width: 600px;
+  height: 120px;
+}
+.site{
+  float: right;
+  width: 400px;
+  height: 120px;
+  background-color: #ffff00;
+}
+.site>ul{
+  float: left;
+  width: 400px;
+}
+.site>ul>li{
+  float: left;
+  width: 400px;
+  height: 60px;
+}

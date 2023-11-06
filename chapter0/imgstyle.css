@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.imgs{
+  height: 350px;
+  width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+.imgs>img{
+  width: 100%;
+  position: absolute;
+  transition: all 1s; 
+  /* transition는 다른 이미지로 넘어갈때 지정한 초에 걸쳐 자연스럽게 넘어가도록 지정(all은 애니메이션이 들어가는 모든속성을 의미) */
+}
