@@ -17,7 +17,6 @@ a {
   display: block;
 }
 header {
-  position: relative;
   width: 1200px;
   height: 100px;
   background-color: #dddddd;
@@ -117,15 +116,14 @@ header {
   margin-top: 120px;
 }
 .bodywrap{
-  position: relative;
   width: 1200px;
-  height: 200px;
+  height: 520px;
 }
 .contents {
   float: left;
   width: 1200px;
   height: 200px;
-  
+  position: absolute;
 }
 /* 공지사항+갤러리 영역 */
 .tabmenu {
@@ -263,7 +261,7 @@ header {
   margin-bottom: 10px;
 }
 /* 바로가기 이미지 크기 */
-.short img {
+.shortcut img {
   float: right;
   width: 395px;
   height: 180px;
@@ -329,11 +327,9 @@ header {
   bottom: 10px;
 }
 footer {
-  position: relative;
   width: 1200px;
   height: 100px;
   background-color: #e9c962;
-  border: 1px solid red;
 }
 .btlogo {
   float: left;
@@ -371,5 +367,5 @@ footer {
   height: 50px;
   text-align: center;
   font-size: 16px;
-  line-height: 80px;
+  line-height: 30px;
 }
