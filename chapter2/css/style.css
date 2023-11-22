@@ -17,6 +17,7 @@ a {
   display: block;
 }
 header {
+  position: relative;
   width: 1200px;
   height: 100px;
   background-color: #dddddd;
@@ -28,7 +29,6 @@ header {
   float: left;
   width: 250px;
   height: 100px;
-  border: solid red 1px;
 }
 
 .logo img {
@@ -90,41 +90,261 @@ header {
 .imgslide {
   width: 1200px;
   height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+/* 이미지 3개가 이어져있음 */
+/* 아래 예시는 좌-우지만 위-아래로 바꿀시엔 height */
+.slidelist{
+  width: 3600px;
+}
+/* 이미지 1개 */
+.slidelist ul li{
+  width: 1200px;
+  float: left;
+}
+/* 이미지 글씨 */
+.slidelist span{
+  width: 500px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 50px;
+  background-color: rgba(40,40,40,0.5);
+  margin-left: 350px;
+  margin-top: 120px;
+}
+.bodywrap{
+  position: relative;
+  width: 1200px;
+  height: 200px;
 }
 .contents {
   float: left;
   width: 1200px;
   height: 200px;
+  
 }
+/* 공지사항+갤러리 영역 */
 .tabmenu {
   float: left;
-  width: 400px;
-  height: 200px;
+  width: 395px;
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+/* 탭 타이틀 영역 */
+.tabmenu>li{
+  float: left;
+  width: 100px;
+  line-height: 30px;
+}
+/* 탭 타이틀 영역 글자 스타일 */
+.tabmenu>li>a{
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom: none; /* 아래 테투리가 겹치지않게 지워줌 */
+}
+/* 탭 타이틀 영역 눌렀을때 배경색 변화 */
+.tabmenu>li>a:hover{
+  background-color: #eeeeee;
+}
+/* 첫번째 앱타이틀(공지사항)에 적용 */
+/* 첫번째(공지사항)의 오른쪽선을 없애서 두번째부분(갤러리)과 겹치지 않도록 */
+.tabmenu>li:first-child a{
+  border-right: none;
+}
+/* 첫번째 앱타이틀 배경색을 지정 */
+.tabmenu>li.active>a{
+  background-color: #ffffff;
+}
+/* 탭 내용 영역 */
+.tabmenu>li div{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  /* overflow: hidden; */
+}
+/* 탭 내용 배치(디폴트 : 공지사항이 앞) */
+.tabmenu>li.active div{
+  width: 393px;
+  height: 148px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  z-index: 1;
+}
+/* 공지사항 내용 영역 */
+.notice ul{
+  float: left;
+  width: 393px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+/* 공지사항 내용 리스트 영역 */
+.notice li{
+  height: 32px;
+  line-height: 32px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* 공지사항 내용 2배수(짝수줄)리스트 영역 */
+.notice li:nth-child(2n){
+  background-color: #cccccc;
+}
+/* 공지사항 날짜 영역 */
+.notice li span{
+  float: right;
+}
+/* 공지사항 내용 리스트에 마우스 올릴때 */
+.notice li:hover{
+  font-weight: bold;
+}
+/* 갤러리 내용 리스트 영역 */
+.gallery li{
+  float: left;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+/* 갤러리 이미지 크기 */
+.gallery img{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+.gallery img:hover{
+  opacity:0.5;
+}
+/* banner + shortcut */
 .otherwrap {
   float: right;
   width: 800px;
   height: 200px;
 }
+/* 배너 위치 */
 .banner {
   float: left;
-  width: 400px;
-  height: 200px;
+  width: 395x;
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+/* 배너 이미지 크기 */
+.banner img {
+  float: left;
+  width: 395px;
+  height: 180px;
+}
+/* 배너 글씨 */
+.bntext {
+  float: left;
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 40px;
+  background-color: rgba(40,40,40,0.3);
+  left: 450px;
+  top: 80px;
+}
+/* 바로가기 위치 */
 .shortcut {
   float: right;
-  width: 400px;
-  height: 200px;
+  width: 395px;
+  height: 180px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* 바로가기 이미지 크기 */
+.short img {
+  float: right;
+  width: 395px;
+  height: 180px;
+}
+/* 바로가기 글씨 */
+.sctext {
+  float: right;
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 40px;
+  background-color: rgba(40,40,40,0.3);
+  left: 850px;
+  top: 80px;
+}
+/* 바로가기 이미지 반투명 변경 */
+.shortcut img:hover{
+  opacity: 0.5;
+}
+/* 레이어 팝업창 위치 */
+#layer{
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+#layer.active{
+  display: block;
+}
+.layer_up{
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  left: 30%;
+  top: 20%;
+  background-color: #ffffff;
+}
+.uptitle{
+  margin-top: 30px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.upbody{
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+.btn{
+  width: 80px;
+  height: 20px;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  background: #cccccc;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 footer {
+  position: relative;
   width: 1200px;
   height: 100px;
   background-color: #e9c962;
+  border: 1px solid red;
 }
 .btlogo {
   float: left;
   width: 250px;
   height: 100px;
+}
+.btlogo img{
+  float: left;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 25px;
 }
 .site {
   float: right;
@@ -134,8 +354,22 @@ footer {
 .btmenu {
   width: 600px;
   height: 50px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+.btmenu li{
+  margin-top: 10px;
+  display: inline-block;
+  width: 100px;
+}
+.btmenu li:hover{
+  font-weight: bold;
 }
 .copyright {
   width: 600px;
   height: 50px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 80px;
 }

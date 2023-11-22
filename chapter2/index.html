@@ -62,43 +62,138 @@
     <!-- 중간 -->
     <div class="bodywrap">
       <!-- 이미지슬라이드 -->
-      <div class="imgslide"></div>
+      <div class="imgslide">
+        <div class="slidelist">
+          <ul>
+            <li>
+              <a href="#">
+                <span>대표은행, 코리아은행</span>
+                <img src="images/img1.jpg" alt="이미지1">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>대표은행, 코리아은행</span>
+                <img src="images/img2.jpg" alt="이미지2">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>대표은행, 코리아은행</span>
+                <img src="images/img3.jpg" alt="이미지3">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <!-- 컨텐츠 -->
       <div class="contents">
         <!-- 공지사항+갤러리 -->
         <ul class="tabmenu">
           <!-- 공지사항 -->
-          <li>
-            <div class="notice"></div>
+          <li class="active"><a href="#">공지사항</a>
+            <div class="notice">
+              <ul>
+                <li>
+                  <a href="#">
+                    대한은행 홈페이지 개편 안내
+                    <span>2022.03.01</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    종합생활금융 플랫폼 코리아은행
+                    <span>2022.03.01</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    시스템 정기 점검 안내
+                    <span>2022.03.01</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    오픈뱅킹 앱 사용법 안내
+                    <span>2022.03.01</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <!-- 갤러리 -->
-          <li>
-            <div class="gallery"></div>
+          <li><a href="#">갤러리</a>
+            <div class="gallery">
+              <ul>
+                <li>
+                  <a href="#"><img src="images/gallery1.jpg" alt="갤러리1"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/gallery2.jpg" alt="갤러리2"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/gallery3.jpg" alt="갤러리3"></a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
         <div class="otherwrap">
           <!-- 배너 -->
-          <div class="banner"></div>
+          <div class="banner">
+            <a href="#">
+              <h4 class="bntext">배너</h4>
+              <img src="images/banner.jpg" alt="배너">
+            </a>
+          </div>
           <!-- 바로가기 -->
-          <div class="shortcut"></div>
+          <div class="shortcut">
+            <a href="#">
+              <h4 class="sctext">바로가기</h4>
+              <img src="images/shortcut.jpg" alt="바로가기">
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    
     <!-- 푸터 -->
     <footer>
       <div class="wrap">
         <div class="bottom">
           <!-- 하단로고 -->
-          <div class="btlogo"></div>
+          <div class="btlogo">
+            <img src="images/logo_bottom.png" alt="로고바텀">
+          </div>
           <!-- 하단메뉴+저작권 -->
           <div class="site">
             <!-- 하단메뉴 -->
-            <div class="btmenu"></div>
+            <div class="btmenu">
+              <ul>
+                <li><a href="#">하단메뉴1</a></li>
+                <li><a href="#">하단메뉴2</a></li>
+                <li><a href="#">하단메뉴3</a></li>
+              </ul>
+            </div>
             <!-- 저작권 -->
-            <div class="copyright"></div>
+            <div class="copyright">COPYRIGHT © by WEDESIGN. ALL RIGHTS RESERVED</div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- 레이어 팝업 -->
+    <div id="layer">
+      <div class="layer_up">
+        <div class="uptitle">코리아은행 기업 서비스 개선 안내</div>
+        <div class="upbody">
+          코리아은행에서는 더 나은 금융 서비스를 제공하고자 기업 금융 서비스를 전면 개편하였습니다.
+          이번 개편을 통해 금융뿐만 아니라 고객 데이터 분석, 지금융 서비스 등을 제공하는 기업 종합금융
+          플랫폼으로 거듭나게 되었으며, 모든 금융계좌의 통합관리, 자금 수금 및 지급 실행 등 
+          통합자금관리 서비스를 무료로 제공합니다.
+        </div>
+        <div class="btn">닫기</div>
+      </div>
+    </div>
   </body>
 </html>
